@@ -10,32 +10,22 @@
 
 int main(void)
 {
-	int i, e;
+	int digit1, digit2;
 
-	i = 48;
-	e = 48;
-
-	while (e < 58)
+	for (digit1 = 0; digit1 < 10; digit1++)
 	{
-		i = 48;
-		while (i < 58)
+		for (digit2 = 0; digit2 < 10; digit2++)
 		{
-			if (e != i && e < i)
-			{
-				putchar(e);
-				putchar(i);
-				if (i == 57 && e == 56)
-				{
-					break;
-				}
-				putchar(',');
-				putchar(' ');
-			}
-			i++;
-		}
-		e++;
+			putchar((digit1 % 10) + '0');
+			putchar((digit2 % 10) + '0');
 
+			if (digit1 == 9 && digit2 == 9)
+				continue;
+			putchar(',');
+			putchar(' ');
+		}
 	}
 	putchar('\n');
+
 	return (0);
 }
