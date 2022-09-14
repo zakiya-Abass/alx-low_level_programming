@@ -1,15 +1,20 @@
 #include "main.h"
 
 /**
- * add - adds two integers
- * @a: first integer
- * @b: second integer
- * Return: sum
+ * print_alphabet -  prints the lowercase alphabet
  *
+ *
+ * Return: void
  */
-int add(int a, int b)
-{
-	int sum = a + b;
 
-	return (sum);
+void print_alphabet(void)
+{
+	char c = 'a';
+	int i;
+
+	for (i = 0; i < 26; i++)
+	{
+		_putchar(c + i);
+	}
+	_putchar(10);
 }
