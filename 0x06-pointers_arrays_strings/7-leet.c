@@ -21,7 +21,7 @@ char *leet(char *x)
 	                    x[a] = trw[b];
 			b++;
 
-		}
+	}
 		a++;
 	}
 	return (x);
